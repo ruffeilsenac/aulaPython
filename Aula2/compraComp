@@ -1,0 +1,43 @@
+
+
+
+# subtotal = valor_computador * quantidade
+# valor desconto = subtotal * desconto / 100
+# total = subtotal - valor_desconto + frete
+# valor_por_computador = total / quantidade
+# 
+
+
+
+print('='*40)
+print(' COMPRA DE COMPUTADORES')
+print('='*40)
+
+#Entrada de dados
+
+# subtotal = valor_computador * quantidade
+# valor desconto = subtotal * desconto / 100
+# total = subtotal - valor_desconto + frete
+# valor_por_computador = total / quantidade
+
+comp = float(input('Valor do computador: '))
+quant = int(input('Quantidade de Computadores: '))
+desc = float(input('desconto: '))
+varDesc = comp*100
+frete = float(input('frete: '))
+subtotal = float(comp*quant)
+
+# subtotal = valor_computador * quant
+
+# valor desconto = subtotal * desconto / 100
+
+# total = subtotal - valor_desconto + frete
+
+# valor_por_computador = total / quantidade
+
+# valor_por_computador = total / quantidade
+
+
+
+print(f'Computador + frete = {valor_computador +frete}')
+print()

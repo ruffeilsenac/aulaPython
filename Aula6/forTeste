@@ -1,0 +1,8 @@
+# somar loops
+
+
+entradaUsuario = int(input())
+
+for i in range(entradaUsuario, 2):
+    soma = entradaUsuario + 5
+    print(soma)

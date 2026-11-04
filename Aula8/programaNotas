@@ -1,0 +1,21 @@
+notas = [7.5, 8.0, 9.5, 6.0, 10.0] #listas[]
+print(notas)
+
+notas.sort() # sort ordena
+print(notas)
+
+print(sum(notas)) #soma listas notas
+print(min(notas)) #mostra nota minima
+print(max(notas)) #mostra nota máxima
+print(sum(notas)/len(notas)) #mostra a soma e divide pelo munero de notas para tirar a mádia
+
+
+for nota in notas: #for percorre a lista
+    print(nota)
+
+for i in notas:
+    if nota >= 7.0:
+        print(f"Nota {nota} é maior ou igual a 7.0 aluno aprovado")
+    else:
+        print(f"Nota {nota} é menor que 7.0 aluno reprovado")
+
