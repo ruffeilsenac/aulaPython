@@ -1,0 +1,102 @@
+# Aluno: José Fernando L. Ruffeil Jonior
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechEdu</title>
+    <link rel="stylesheet" href="/projeto_techedu/css/style.css">
+
+</head>
+<body>
+
+    <header id=""inicio>
+        <img src="logo.png" alt="Logo da TechEdu">
+        <h1>Bem-vindo à TechEdu</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Cursos</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section>
+            <article>
+                <h2 class=""titulo-secao>Sobre Nós</h2>
+                <p class="descricao">
+                    Bem-vindo à TechEdu, onde a educação tecnológica encontra a inovação.
+                </p>
+            </article>
+
+            <article>
+                <h2>Nossos Cursos</h2>
+                <p>
+                    Descubra nossos cursos e desenvolva suas habilidades na área de tecnologia.
+                </p>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h2>Missão</h2>
+                <p>
+                    Promover o aprendizado tecnológico de forma acessível e prática.
+                </p>
+            </article>
+
+            <article>
+                <h2>Visão</h2>
+                <p>
+                    Ser referência em educação tecnológica e inovação digital.
+                </p>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Informações Complementares</h2>
+            <p>
+                Confira novidades, eventos e materiais de apoio disponíveis para os alunos.
+            </p>
+        </aside>
+
+        <form action="arquivo_de_envio.php" method="post">
+            <h2>Contato</h2>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" min="1" max="120" required>
+
+            <label for="data_nascimento">Data de Nascimento:</label>
+            <input type="date" id="data_nascimento" name="data_nascimento" required>
+
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo" required>
+                <option value="">Selecione</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="8" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TechEdu. Todos os direitos reservados.</p>
+    </footer>

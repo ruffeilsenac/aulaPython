@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    color:aliceblue;
+    line-height: 1.6;
+
+ }
+
+ p {
+    font-size: 16 px;
+    line-height: 1.2;
+    color: rgb(61, 65, 102);
+ }
+ 
+ 
+ /* CABEÇALHO*/
+
+ header {
+    background-color: #1E3A5F;
+    color: white;
+    text-align: center;
+    padding: 25px;
+ }
+
+ header img{
+    width: 70px;
+    heigth: 70px
+ }
+
+ header h1 {
+    margin-top: 10px;
+    font-size: 28px;
+ }
+
+ 
+ 
+ /* MENU DE NAVEGÇÃO*/
+
+ nav{
+    background-color: #162b45;
+    text-align: center;
+    padding: 15px;
+ }
+
+  nav ul{
+    list-style: none;
+ }
+
+  nav li {
+    display: inline;
+    margin: 0 15px;
+ }
+
+  nav a{
+    color: white;
+    text-decoration: none;
+ }
+
+  nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+ }
+
+ nav a:hover{
+    color: #170538
+ }
+
+ 
+ 
+ /*CONTEÚDO PRINCIPAL*/
+
+ main{
+    color: aliceblue;
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+ }
+
+ /* SEÇÕES:*/
+
+ section{
+    margin-bottom: 25px;
+ }
+
+ /*ARTIGOS:*/
+article{
+    background-color: rgb(54, 74, 100);
+    padding: 25px;
+    margin-bottom: 45px;
+    border-radius: 8px;
+    border: 1px solid white
+}
+
+article h2{
+    color: rgb(75, 110, 206);
+    margin-botton: 10px;
+
+}
+
+aside{
+    background-color: aliceblue;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-left: 5px solid #1e3a5f;
+}
+
+aside h2{
+    color: #1e3a5f;
+    margin-bottom: 10px;
+}
+
+/*FORMULÁRIO*/
+
+form{
+    background-color: white;
+    padding: 25px;
+    border 1px solid #ddd;
+}
+
+form h2{
+    color: #1e5f25;
+    margin-bottom: 15px;
+}
+
+form label{
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+forma textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px
+    border: 1px solid #ccc
+    border-radius: 5px;
+    font-size: 15px
+}
+
+form button {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover{
+    background-color: #2d5b8e;
+}
+
+/*RODAPÉ*/
+footer{
+    background-color: #162b45;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
