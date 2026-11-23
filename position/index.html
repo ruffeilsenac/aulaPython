@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Lab</title>
+    <link rel="stylesheet" href="/position/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Position Lab</h1>
+        <p>Aprendendo a propriedade position do CSS</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>1. Position Static</h2>
+            <p>As caixas seguem o fluxo normal.</p>
+
+            <div class="caixa static">Caixa A</div>
+            <div class="caixa static">Caixa B</div>
+        </section>
+
+        <section>
+            <h2>2. Position Relative</h2>
+            <p>A caixa se desloca da posição original.</p>
+
+            <div class="caixa">Caixa normal</div>
+            <div class="caixa relative">Caixa Relative</div>
+            <div class="caixa">Outra caixa normal</div>
+        </section>
+
+        <section>
+            <h2>3. Position Absolute</h2>
+            <p>O elemento pode ser posicionado dentro de um contêiner.</p>
+
+            <div class="container">
+                <p>Contêiner pai (relative)</p>
+                <div class="absolute">ABSOLUTE</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>4. Position Sticky</h2>
+            <p>Role a página para observar o título abaixo.</p>
+
+            <div class="sticky">Sou um elemento STICKY</div>
+
+            <div class="conteudo">
+                <p>Conteúdo da página...</p>
+                <p>Continue rolando...</p>
+                <p>Observe o comportamento do elemento.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>5. Position Fixed</h2>
+            <p>Observe o botão de ajuda no canto da tela.</p>
+            <p>Ele permanece visível durante a rolagem.</p>
+        </section>
+
+    </main>
+
+    <div class="fixed">Ajuda</div>

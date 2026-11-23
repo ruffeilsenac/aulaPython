@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Regional de Pesca</title>
+    <link rel="stylesheet" href="/MercadoRegional/css/style.css">
+</head>
+<body>
+    
+
+<!--  Tela Inicial
+A primeira tela deve ser extremamente simples.
++------------------------------------------------+
+|                                                |
+|              MERCADO REGIONAL                  |
+|                                                |
+|      Conectando negócios da sua região         |
+|                                                |
+|                                                |
+|      [ Cadastrar Novo Registro ]               |
+|                                                |
+|      [ Consultar Registros ]                   |
+|                                                |
+|      [ Gerar Relatórios ]                      |
+|                                                |
++------------------------------------------------+
+ -->
+
+
+
+
+    
+    <header id="inicio">
+        <div class="container cabecalho">
+
+            <h1> Mercado Regional de Pesca</h1>
+                        <img src="/MercadoRegional/img/logo.png"
+                 alt="Ver-o-Peso Market in Belém, Brazil">
+
+            <nav>
+                <a href="#inicio">Início</a>
+                <a href="#Cadastros">Serviços</a>
+                <a href="#Registros">Sobre</a>
+                <a href="#Relatórios">Contato</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- BANNER PRINCIPAL -->
+    <section class="banner">
+
+        <div class="container banner-conteudo">
+
+            <div class="banner-texto">
+                <h2>Gestão simples para fortalecer resultados:</h2>
+
+                <p>
+                    Cuidamos do que importa para você ter sucesso.
+                </p>
+
+                <a href="#servicos" class="botao">
+                    Nossos Serviços
+                </a>
+            </div>
+
+            <img src="/MercadoRegional/img/belem-do-para.jpg"
+                 alt="Ver-o-Peso Market in Belém, Brazil">
+
+        </div>
+
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="secao">
+
+        <div class="container">
+
+            <h2 class="titulo">Atalhos:</h2>
+
+            <div class="lista-cards">
+
+                <article class="card">
+                    <span></span>
+                    <h3>Cadastrar Novo Registro</h3>
+                    <p>
+                        Lance sua pesca.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <span></span>
+                    <h3>Consultar Registros </h3>
+                    <p>
+                        Veja como está o porão do seu barco.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <span></span>
+                    <h3>Gerar Relatórios </h3>
+                    <p>
+                        Consolide e envie relatórios da situação atual.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <span></span>
+                    <h3>Programe sua chegada.</h3>
+                    <p>
+                        Atualize a data da sua chegada.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SOBRE NÓS -->
+    <section id="sobre" class="secao sobre">
+
+        <div class="container sobre-conteudo">
+
+            <img src="/MercadoRegional/img/\mercado-ver-o-peso.jpg"
+                 alt="Profissional cuidando de um cachorro">
+
+            <div>
+                <h2>Previsão do tempo atualizada</h2>
+
+                <p>
+                    Acompanha aqui a previsão do tempor e tábua de marés atualizada para o mercado do Ver-o-Peso.
+                </p>
+
+                <p>
+                    BONS VENTOS E BOA PESCA!
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="secao">
+
+        <div class="container">
+
+            <h2 class="titulo">Entre em Contato</h2>
+
+            <form>
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome"
+                       name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email"
+                       name="email" required>
+
+                <label for="servico">Serviço:</label>
+                <select id="servico" name="servico">
+                    <option value="">Selecione</option>
+                    <option>Dúvidas</option>
+                    <option>Bug de Sistema</option>
+                    <option>Sugestões</option>
+                </select>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem"
+                          name="mensagem"
+                          rows="5"></textarea>
+
+                <button type="submit" class="botao">
+                    Enviar Mensagem
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>Desenvolvolvendo o mercado do peixe</p>
+        <p>© 2026 - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+
+
+
+
+</html>

@@ -1,0 +1,138 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #219ebc;
+  --color-secondary: #6B7280;
+  --color-accent: #52b69a;
+  --color-background: #F9FAFB;
+  --color-head: #ffb703;
+  --color-text: #184e77;  
+  --color-font: #fb8500;
+  --color-box: #ade8f4;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-secondary);
+    color: var(--color-accent);
+
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    display: absolute;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        135deg,
+        var(--color-primary),
+        var(--color-accent)
+    );
+}
+
+
+h1{
+    position: absolute;
+    font-size: 5rem;
+    color: var(--color-box);
+    padding: 120 px;
+}
+
+
+h2{
+    color: var(--color-font);
+    padding: 60px;
+}
+
+
+h3{
+    color: var(--color-font);
+    padding: 20px;
+}
+
+
+main{
+    padding: 20px;
+    max-width: auto;
+    padding: 20px;
+}
+
+section{
+    margin-bottom: 20px;
+    background-color: var(--color-background);
+    padding: 25px;
+    border-radius: 10px;
+    background-color: var(--color-box);
+    
+}
+
+
+
+.caixa{
+    width: 180px;
+    padding: 20px;
+    border-radius: 6px;
+
+}
+
+.static{
+    position: static;
+    background: #93c5fd;
+}
+
+.relative{
+    position: relative;
+    background: #facc15;
+    top: 55px;
+    background: #facc15;
+}
+
+.container{
+    position: relative;
+    background: #9b9a9a;
+    height: 180px;
+    border: 2px daqshed #64748b;
+    padding: 15px;
+}
+
+.absolute{
+    position: absolute;
+    background: #34d399;
+    top: 20px;
+    right: 20px;
+    position: absolute;
+    padding: 15px;
+    color: white;
+    border-radius: 6px;
+}
+
+
+.conteudo{
+    background: #9b9a9a;
+    height: 60px;
+    padding: 20px;
+}
+
+.fixed{
+    position: fixed;
+    right: 20px;
+    background: #1155e9;
+    padding: 15px;
+    color: white;
+    border-radius: 6px;
+    bottom: 20px;
+    padding: 18px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px #00000030;
+    z-index: 10;
+
+}
