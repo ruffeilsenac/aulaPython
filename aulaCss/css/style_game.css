@@ -1,138 +1,209 @@
 
-*{
+/* CONFIGURAÇÕES GERAIS */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root {
-  --color-primary: #219ebc;
-  --color-secondary: #6B7280;
-  --color-accent: #52b69a;
-  --color-background: #F9FAFB;
-  --color-head: #ffb703;
-  --color-text: #184e77;  
-  --color-font: #fb8500;
-  --color-box: #ade8f4;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #101425;
+    color: white;
 }
 
+/* CABEÇALHO */
 
-body{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--color-secondary);
-    color: var(--color-accent);
-
+header {
+    background: linear-gradient(135deg, #5423b5, #161b35);
+    text-align: center;
+    padding: 60px 20px;
 }
 
-header{
-    width: 100%;
-    height: 100px;
-    display: absolute;
+header h1 {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+header p {
+    color: #d6c9ff;
+}
+
+/* POSITION STICKY */
+
+.menu {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #202641;
+    padding: 20px;
+    display: flex;
     justify-content: center;
+    gap: 35px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #b59aff;
+}
+
+/* DESTAQUE */
+
+.destaque {
+    position: relative;
+    margin: 40px auto;
+    padding: 65px 30px;
+    max-width: 1100px;
+    background: linear-gradient(120deg, #6335cc, #283b83);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.destaque h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* POSITION ABSOLUTE */
+
+.selo-destaque {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #ffcc00;
+    color: #171717;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* CATÁLOGO */
+
+.catalogo {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.catalogo h2 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.lista-jogos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* POSITION RELATIVE */
+
+.card {
+    position: relative;
+    background-color: #222942;
+    width: 240px;
+    min-height: 320px;
+    padding: 30px 20px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    background: linear-gradient(
-        135deg,
-        var(--color-primary),
-        var(--color-accent)
-    );
+    gap: 15px;
 }
 
-
-h1{
-    position: absolute;
-    font-size: 5rem;
-    color: var(--color-box);
-    padding: 120 px;
+.icone-jogo {
+    font-size: 65px;
 }
 
-
-h2{
-    color: var(--color-font);
-    padding: 60px;
+.card h3 {
+    color: #c4b0ff;
 }
 
-
-h3{
-    color: var(--color-font);
-    padding: 20px;
+.card p {
+    color: #cbd0e1;
+    line-height: 1.5;
 }
 
-
-main{
-    padding: 20px;
-    max-width: auto;
-    padding: 20px;
+.card strong {
+    font-size: 22px;
+    color: #69e6b1;
+    margin-top: auto;
 }
 
-section{
-    margin-bottom: 20px;
-    background-color: var(--color-background);
-    padding: 25px;
-    border-radius: 10px;
-    background-color: var(--color-box);
-    
-}
-
-
-
-.caixa{
-    width: 180px;
-    padding: 20px;
-    border-radius: 6px;
-
-}
-
-.static{
-    position: static;
-    background: #93c5fd;
-}
-
-.relative{
-    position: relative;
-    background: #facc15;
-    top: 55px;
-    background: #facc15;
-}
-
-.container{
-    position: relative;
-    background: #9b9a9a;
-    height: 180px;
-    border: 2px daqshed #64748b;
-    padding: 15px;
-}
-
-.absolute{
-    position: absolute;
-    background: #34d399;
-    top: 20px;
-    right: 20px;
-    position: absolute;
-    padding: 15px;
+.card button {
+    background-color: #7b4ee6;
     color: white;
-    border-radius: 6px;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
+/* POSITION ABSOLUTE */
 
-.conteudo{
-    background: #9b9a9a;
-    height: 60px;
-    padding: 20px;
+.promocao {
+    position: absolute;
+    top: -12px;
+    right: -10px;
+    background-color: #ff4757;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
 }
 
-.fixed{
+/* SEÇÕES INFORMATIVAS */
+
+.sobre,
+.contato {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 90px 35px;
+    min-height: 300px;
+    background-color: #1c233b;
+    border-radius: 15px;
+}
+
+.sobre h2,
+.contato h2 {
+    margin-bottom: 25px;
+    color: #b59aff;
+}
+
+.sobre p,
+.contato p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+    background-color: #090d19;
+    padding: 35px;
+}
+
+/* POSITION FIXED */
+
+.suporte {
     position: fixed;
-    right: 20px;
-    background: #1155e9;
-    padding: 15px;
-    color: white;
-    border-radius: 6px;
-    bottom: 20px;
-    padding: 18px;
-    border-radius: 50px;
-    box-shadow: 0 4px 10px #00000030;
-    z-index: 10;
-
+    bottom: 25px;
+    right: 25px;
+    z-index: 200;
+    background-color: #22c55e;
+    color: #102016;
+    padding: 16px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 20px #0006;
 }
